@@ -6,8 +6,11 @@
 분류별로 시각화 하여 가설 및 결론 도출
 
 # 사용 기술셋
-
-Java Script / Axios / Vue.js / Google Chart / Word Cloud (anychart) / JSP / JSON Data / CSS / HTML
+RDBMS : Oracle
+Development Language : Java / Java Script / HTML / CSS
+Library: Axios
+Web Development : Vue.js / JSP
+Tool : Google Chart / Word Cloud(anychart)/ CSV to Jason converter 
 
 # 개발 환경
 
