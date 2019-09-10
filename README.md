@@ -7,15 +7,24 @@
 
 # 사용 기술셋
 
-## Java Script / Axios / Vue.js / Google Chart / JSP / JSON Data / css / HTML
+Java Script / Axios / Vue.js / Google Chart / JSP / JSON Data / css / HTML
 
 # 개발 환경
 
-## Window 10
-## Eclipse Java EE IDE for Web Developers Version: Photon Release (4.8.0)  
-## Visual Studio Code Version: 1.38.0
+Window 10
+Eclipse Java EE IDE for Web Developers Version: Photon Release (4.8.0)  
+Visual Studio Code Version: 1.38.0
 
 # 소스가 실행 되려면?
-## 1. Eclips에서 jsp 파일에 JSON 데이터를 넣어놓고 Web서버를 가동합니다.
-## 2. Vsc에서 step03_miniProject.html 파일을 라이브 서버로 기동 시킵니다.
-## 3. 분석을 시작합니다.
+1. Eclips에서 jsp 파일에 JSON 데이터를 넣어놓고 Web서버를 가동합니다.
+2. Vsc에서 step03_miniProject.html 파일을 라이브 서버로 기동 시킵니다.
+3. 분석을 시작합니다.
+
+# 가설설정
+
+
+
+#결론
+
+
+# 향후 추가 되었으면 하는 것은?
