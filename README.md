@@ -7,7 +7,7 @@
 
 # 사용 기술셋
 
-Java Script / Axios / Vue.js / Google Chart / JSP / JSON Data / css / HTML
+Java Script / Axios / Vue.js / Google Chart / Word Cloud (anychart) / JSP / JSON Data / CSS / HTML
 
 # 개발 환경
 
@@ -20,11 +20,25 @@ Visual Studio Code Version: 1.38.0
 2. Vsc에서 step03_miniProject.html 파일을 라이브 서버로 기동 시킵니다.
 3. 분석을 시작합니다.
 
+# 페이지 미리보기
+
+### 분류별 데이터 차트 
+<img src="img/Main.png"></img>
+
 # 가설설정
 
 
 
-#결론
+# 결론
 
 
 # 향후 추가 되었으면 하는 것은?
+
+# 출처
+### 그래프
+
+Google / AnyChart
+
+### 데이터
+
+서울시 열린 데이터 광장
