@@ -25,6 +25,10 @@ Visual Studio Code Version: 1.38.0
 ### 분류별 데이터 차트 
 <img src="img/Main.png"></img>
 
+### 소분류별 워드 클라우드
+
+<img src="img/WordCloud.png"></img>
+
 # 가설설정
 
 
