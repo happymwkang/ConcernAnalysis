@@ -6,10 +6,10 @@
 분류별로 시각화 하여 가설 및 결론 도출
 
 # 팀원
-강민웅 [강민웅님의 깃허브 바로가기](https://github.com/happymwkang)
-김수경 [김수경님의 깃허브 바로가기](https://github.com/sooish)
-김웅태 [김웅태님의 깃허브 바로가기](https://github.com/angle2v)
-김종성 [김종성님의 깃허브 바로가기](https://github.com/SEJSCloud)
+강민웅 [강민웅님의 깃허브 바로가기](https://github.com/happymwkang)<br>
+김수경 [김수경님의 깃허브 바로가기](https://github.com/sooish)<br>
+김웅태 [김웅태님의 깃허브 바로가기](https://github.com/angle2v)<br>
+김종성 [김종성님의 깃허브 바로가기](https://github.com/SEJSCloud)<br>
 
 
 # 사용 기술셋
