@@ -5,6 +5,13 @@
 서울시 경제 , 건강 , 자녀 , 노후생활 , 공부 , 진학 , 취업 , 은퇴 , 결혼 , 이성 , 우정 , 외모 , 폭력에 대한 개인적인 고민 지표 통계를 활용하여
 분류별로 시각화 하여 가설 및 결론 도출
 
+# 팀원
+강민웅 [강민웅님의 깃허브 바로가기](https://github.com/happymwkang)
+김수경 [김수경님의 깃허브 바로가기](https://github.com/sooish)
+김웅태 [김웅태님의 깃허브 바로가기](https://github.com/angle2v)
+김종성 [김종성님의 깃허브 바로가기](https://github.com/SEJSCloud)
+
+
 # 사용 기술셋
 RDBMS : Oracle
 Development Language : Java / Java Script / HTML / CSS
