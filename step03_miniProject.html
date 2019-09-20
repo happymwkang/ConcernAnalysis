@@ -53,26 +53,29 @@ html, body, #container {
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-
         new Vue ({
             el : "#app",
             methods : {
                 drawChartOne : function(subject){
-                    axios.get("http://localhost/step02_axiosResponse/axios.jsp")
+                    axios.get("http://localhost:9200/concern1/_search?size=100&filter_path=hits.hits._source")
                     .then(function(resData) {
                         let dataKeys = []; // 구글차트 첫 행에 넣어줄 컬럼(키)
                         let dataArray = []; // 가공 전 resData에서 전체 데이터를 담을 배열
                         let btn = document.getElementById("app2"); // 소분류 버튼 생성할 곳 
                         btn.innerHTML = null; // 소분류 버튼 초기화
+                        document.getElementById("container").innerHTML = "<span></span>";
                         array= [];
-                          
+                        let firstLength = Object.keys(resData.data.hits.hits[0]._source).length;
+                        let secondLength = resData.data.hits.hits.length;
+                        
+
                         // 최초 키(컬럼) 셋팅
-                        for(let j = 0; j < Object.keys(resData.data[0]).length ; j++){
-                            dataKeys.push(Object.keys(resData.data[0])[j]);
+                        for(let j = 0; j < firstLength; j++){
+                            dataKeys.push(Object.keys(resData.data.hits.hits[0]._source)[j]);
                         }
                         // 전체 데이터 배열에 담기
-                        for(let i = 0; i<resData.data.length; i++){
-                            dataArray.push(Object.values(resData.data[i]));
+                        for(let i = 0; i < secondLength; i++){
+                            dataArray.push(Object.values(resData.data.hits.hits[i]._source));
                         }
                         
                         // 배열에 필요없는 부분 지우기
@@ -92,7 +95,7 @@ html, body, #container {
                           array[m].splice(0,1);
                           array[m].splice(1,1);
                         }
-
+                        
                         // 소분류별 워드 클라우드 적용하기위한 전용 버튼 생성
                         for(let i = 0; i < array.length; i++){
                           btn.innerHTML += "<button class=\"bt\" onclick=\"dataWord('" + array[i][0] + "')\">" + array[i][0] + "</button>"
@@ -109,9 +112,15 @@ html, body, #container {
                         // 키값중에 필요없는 값 지우기 ( 년도, 대분류, 소분류 )
                         dataKeys.splice(0,2);
                         dataKeys.splice(1,1);
-
                         // 구글차트 데이터 형식에 맞게 키값 제일 첫 인덱스로 셋팅
                         array.unshift(dataKeys);
+
+                        // 차트 데이터 폼에 맞게 string타입들 number타입으로 변경
+                        for(let a = 1; a < array.length; a++){
+                          for(let b = 1; b < array[0].length; b++){
+                            array[a][b] = Number(array[a][b]);
+                          }
+                        }
                         drawVisualization(array,subject);
                     }).catch(function(error) {
                         console.log(" 에러낫어여", error)
@@ -154,12 +163,10 @@ html, body, #container {
         function drawWord(data){
             document.getElementById("container").innerHTML = "<span></span>";
             var chart = anychart.tagCloud(data);
-            // chart.title(subject + " 통합 가장 큰 고민거리")
             chart.angles([0])
             chart.container(document.getElementById("container"));
             chart.draw();
         }
-      
     </script>
 </body>
 </html>
