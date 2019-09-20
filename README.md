@@ -13,10 +13,10 @@
 
 
 # 사용 기술셋
-RDBMS : Oracle
+DB : ElasticSearch
 Development Language : Java / Java Script / HTML / CSS
 Library: Axios
-Web Development : Vue.js / JSP
+Web Development : Vue.js
 Tool : Google Chart / Word Cloud(anychart)/ CSV to Jason converter 
 
 # 개발 환경
